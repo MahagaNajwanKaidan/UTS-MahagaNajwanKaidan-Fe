@@ -43,17 +43,17 @@ React Router DOM - A library for routing in React applications, providing a way 
 
 
 - **Hasil Booking**
-<img src="./Img/booking.png" />
+<img src="./img/booking.png" />
 
 
 
 - **Hasil Reviews**
-<img src="./Img/review.png" />
+<img src="./img/review.png" />
 
 
 
 - **Hasil Payment**
-<img src="/img/payment.png" />
+<img src="./img/payment.png" />
 
 
 
