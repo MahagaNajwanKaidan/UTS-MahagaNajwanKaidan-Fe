@@ -26,7 +26,7 @@ YANG DIGUNAKAN DALAM PEMBUATAN PROJECT
 React - JavaScript library for building user interfaces.
 Tailwind CSS - A utility-first CSS framework.
 Axios - Promise-based HTTP client for API requests.
-React Router DOM - A library for routing in React applications, providing a way to navigate between different components or pages within a web application.
+React Router DOM - A library for routing in React applications, providing a way to navigate between different components or pages within a web application
 
 
 ## hasilnya
