@@ -229,7 +229,7 @@ export default function Frame({ children }) {
         </DrawerHeader>
         <Divider />
         <List>
-          <Link to={"/"}>
+          <Link to={"/Home"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
