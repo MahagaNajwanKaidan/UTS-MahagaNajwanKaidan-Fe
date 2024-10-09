@@ -192,7 +192,7 @@ export default function Frame({ children }) {
                   <ListItemIcon>
                     <Settings fontSize="small" />
                   </ListItemIcon>
-                  Setting
+                  Seting
                 </MenuItem>
                 <MenuItem onClick={handleCloseProfile}>
                   <ListItemIcon>
@@ -215,7 +215,9 @@ export default function Frame({ children }) {
           },
         }}
         variant="persistent"
+
         anchor="left"
+
         open={open}
       >
         <DrawerHeader>
@@ -241,7 +243,9 @@ export default function Frame({ children }) {
               >
                 <ListItemIcon
                   sx={{
-                    color: `${location.pathname === "/" ? "blue" : "black"}`,
+
+                    color: `${location.pathname === "/Home" ? "blue" : "black"}`,
+                  
                   }}
                 >
                   <HomeIcon />
@@ -256,17 +260,17 @@ export default function Frame({ children }) {
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/warehouse" ? "blue" : "black"
+                    location.pathname === "/Room" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/warehouse" ? "#dbdbdb" : ""
+                    location.pathname === "/Room" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/warehouse" ? "blue" : "black"
+                      location.pathname === "/Room" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -282,17 +286,17 @@ export default function Frame({ children }) {
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/products" ? "blue" : "black"
+                    location.pathname === "/Room" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/products" ? "#dbdbdb" : ""
+                    location.pathname === "/Room" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/products" ? "blue" : "black"
+                      location.pathname === "/Room" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -318,10 +322,10 @@ export default function Frame({ children }) {
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/machine" ? "blue" : "black"
+                        location.pathname === "/Booking" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/machine" ? "#dbdbdb" : ""
+                        location.pathname === "/Booking" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -329,7 +333,7 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/machine" ? "blue" : "black"
+                          location.pathname === "/Booking" ? "blue" : "black"
                         }`,
                       }}
                     >
