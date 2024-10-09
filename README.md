@@ -12,15 +12,13 @@ This project is a simple **Booking & Payment System** built using React and Mate
 ---
 
 ## Overview
-This project implements a booking and payment management system that allows users to:
-- View a list of bookings and payments.
-- Add new bookings and payments.
-- Edit existing records.
-- Delete records.
+- user = sudah mempunyai sistem CRUD
+- Room = sudah mempunyai sistem CRUD
+- rating room = sudah mempunyai sistem CRUD
+- Booking = sudah mempunyai sistem CRUD
+- Payment = sudah mempunyai sistem CRUD
 
-The app fetches data from an API and displays it in a table. Users can interact with this data using forms and modals provided by Material-UI components.
-
-## Components Explanation
+## komponen dalah codingan saya
 
 YANG DIGUNAKAN DALAM PEMBUATAN PROJECT
 React - JavaScript library for building user interfaces.
