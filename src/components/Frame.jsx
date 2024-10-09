@@ -246,12 +246,12 @@ export default function Frame({ children }) {
                 >
                   <HomeIcon />
                 </ListItemIcon>
-                <ListItemText>User</ListItemText>
+                <div><ListItemText className="bg-dark-600'">Data client</ListItemText></div>
               </ListItemButton>
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/warehouse"}>
+          <Link to={"/Room"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
@@ -277,7 +277,7 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/products"}>
+          <Link to={"/RatingRoom"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
@@ -307,13 +307,13 @@ export default function Frame({ children }) {
             <ListItemIcon sx={{ color: "black" }}>
               <InventoryIcon />
             </ListItemIcon>
-            <ListItemText primary="Data Booking" />
+            <ListItemText primary="Data" />
             {inventory ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Divider />
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/machine"}>
+              <Link to={"/Booking"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
@@ -336,6 +336,36 @@ export default function Frame({ children }) {
                       <AdfScannerIcon />
                     </ListItemIcon>
                     <ListItemText>Booking</ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+            </List>
+          </Collapse>
+          <Collapse in={inventory} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <Link to={"/Payment"}>
+                <ListItem disablePadding>
+                  <ListItemButton
+                    sx={{
+                      color: `${
+                        location.pathname === "/Payment" ? "blue" : "black"
+                      }`,
+                      backgroundColor: `${
+                        location.pathname === "/Payment" ? "#dbdbdb" : ""
+                      }`,
+                      paddingLeft: 4,
+                    }}
+                  >
+                    <ListItemIcon
+                      sx={{
+                        color: `${
+                          location.pathname === "/Payment" ? "blue" : "black"
+                        }`,
+                      }}
+                    >
+                      <AdfScannerIcon />
+                    </ListItemIcon>
+                    <ListItemText>Payment</ListItemText>
                   </ListItemButton>
                 </ListItem>
               </Link>

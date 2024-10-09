@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Modal, Box, Button } from "@mui/material";
-import { deleteUser, getAllUser, postUser, updateUser } from "../services/getApi";
+import { deleteUser, getAllUser, postUser, updateUser } from "../services/getApi.js";
 import { Modals } from "../components/editModal";
 
 const Home = () => {
@@ -185,7 +185,7 @@ function handleData(e) {
                                       <td className='py-3 px-6'>{items.email}</td>
                                       <td className='py-3 px-6'>{items.phonenumber}</td>
                                       <td className='py-3 px-6 rounded-br-lg gap-x-2 flex justify-center items-center'>
-                                          <button className='' onClick={openModals}>Edit</button>
+                                          <button className='bg-yellow-500 p-2 rounded font-md font-semibold text-white ' onClick={openModals}>Edit</button>
                                           <form onSubmit={(e) => { e.preventDefault(); getDataId(); }}>        
                                           <Modals
                                               isBuka={modalOpen} 

@@ -3,7 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 
 // PAGES
 import Home from "./pages/Home";
-import Machine from "./pages/Machine";
+
 
 
 // COMPONENTS
@@ -11,6 +11,8 @@ import Frame from "./components/Frame";
 import RatingRoom from "./pages/RatingRoom";
 import Profile from "./pages/Profile";
 import Room from "./pages/Room";
+import Booking from "./pages/Booking";
+import Payment from "./pages/Payment";
 
 const App = () => {
   const theme = createTheme({
@@ -27,10 +29,11 @@ const App = () => {
         <Frame>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/machine" element={<Machine />} />
-            <Route path="/products" element={<RatingRoom />} />
+            <Route path="/Booking" element={<Booking />} />
+            <Route path="/RatingRoom" element={<RatingRoom />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/room" element={<Room />} />
+            <Route path="/Room" element={<Room />} />
+            <Route path="/Payment" element={<Payment />} />
           </Routes>
         </Frame>
       </BrowserRouter>
