@@ -62,6 +62,7 @@ const AppBar = styled(MuiAppBar, {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
+  backgroundColor: "blue",
   ...(open && {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: `${drawerWidth}px`,
@@ -122,7 +123,7 @@ export default function Frame({ children }) {
           >
             <MenuIcon />
           </IconButton>
-          <div className="flex flex-row items-center justify-between w-full">
+          <div className="flex flex-row items-center justify-between w-full bg-blue">
             <Typography variant="h6" noWrap component="div">
               <h1>Hotel NIGHMARES ONE</h1>
             </Typography>

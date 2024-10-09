@@ -3,38 +3,42 @@ import { ThemeProvider, createTheme } from "@mui/material";
 
 // PAGES
 import Home from "./pages/Home";
-
-
-
-// COMPONENTS
-import Frame from "./components/Frame";
+import Booking from "./pages/Booking";
 import RatingRoom from "./pages/RatingRoom";
 import Profile from "./pages/Profile";
 import Room from "./pages/Room";
-import Booking from "./pages/Booking";
 import Payment from "./pages/Payment";
+import Halaman from "./pages/halaman"; 
+
+// COMPONENTS
+import Frame from "./components/Frame"; 
+
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["Poppins", "sans-serif"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#8E0000",
+    },
+  },
+});
 
 const App = () => {
-  const theme = createTheme({
-    typography: {
-      fontFamily: ["Poppins", "sans-serif"].join(","),
-      palette: {
-        red: "#8E0000",
-      },
-    },
-  });
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Frame>
           <Routes>
+            {/* Define your routes */}
             <Route path="/home" element={<Home />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/ratingRoom" element={<RatingRoom />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/room" element={<Room />} />
             <Route path="/payment" element={<Payment />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Halaman />} />
           </Routes>
         </Frame>
       </BrowserRouter>
