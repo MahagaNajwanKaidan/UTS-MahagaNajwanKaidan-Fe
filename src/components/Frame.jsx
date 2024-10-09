@@ -184,7 +184,7 @@ export default function Frame({ children }) {
               >
                 <Link to={"/profile"}>
                   <MenuItem onClick={handleCloseProfile}>
-                    <Avatar /> Profile Anda
+                    <Avatar /> <>Profile Anda</>
                   </MenuItem>
                 </Link>
                 <Divider />
