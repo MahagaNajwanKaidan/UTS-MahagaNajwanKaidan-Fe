@@ -28,12 +28,12 @@ const App = () => {
       <BrowserRouter>
         <Frame>
           <Routes>
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Booking" element={<Booking />} />
-            <Route path="/RatingRoom" element={<RatingRoom />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/ratingRoom" element={<RatingRoom />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/Room" element={<Room />} />
-            <Route path="/Payment" element={<Payment />} />
+            <Route path="/room" element={<Room />} />
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         </Frame>
       </BrowserRouter>

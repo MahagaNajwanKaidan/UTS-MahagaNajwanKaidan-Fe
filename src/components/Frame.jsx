@@ -231,11 +231,11 @@ export default function Frame({ children }) {
         </DrawerHeader>
         <Divider />
         <List>
-          <Link to={"/Home"}>
+          <Link to={"/home"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
-                  color: `${location.pathname === "/" ? "blue" : "black"}`,
+                  color: `${location.pathname === "/home" ? "blue" : "black"}`,
                   backgroundColor: `${
                     location.pathname === "/" ? "#dbdbdb" : ""
                   }`,
@@ -244,7 +244,7 @@ export default function Frame({ children }) {
                 <ListItemIcon
                   sx={{
 
-                    color: `${location.pathname === "/Home" ? "blue" : "black"}`,
+                    color: `${location.pathname === "/home" ? "blue" : "black"}`,
                   
                   }}
                 >
@@ -255,22 +255,22 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/Room"}>
+          <Link to={"/room"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/Room" ? "blue" : "black"
+                    location.pathname === "/room" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/Room" ? "#dbdbdb" : ""
+                    location.pathname === "/room" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/Room" ? "blue" : "black"
+                      location.pathname === "/room" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -281,22 +281,22 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/RatingRoom"}>
+          <Link to={"/ratingRoom"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/Room" ? "blue" : "black"
+                    location.pathname === "/ratingRoom" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/Room" ? "#dbdbdb" : ""
+                    location.pathname === "/ratingRoom" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/Room" ? "blue" : "black"
+                      location.pathname === "/ratingRoom" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -317,15 +317,15 @@ export default function Frame({ children }) {
           <Divider />
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/Booking"}>
+              <Link to={"/booking"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/Booking" ? "blue" : "black"
+                        location.pathname === "/booking" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/Booking" ? "#dbdbdb" : ""
+                        location.pathname === "/booking" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -333,13 +333,13 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/Booking" ? "blue" : "black"
+                          location.pathname === "/booking" ? "blue" : "black"
                         }`,
                       }}
                     >
                       <AdfScannerIcon />
                     </ListItemIcon>
-                    <ListItemText>Booking</ListItemText>
+                    <ListItemText>booking</ListItemText>
                   </ListItemButton>
                 </ListItem>
               </Link>
@@ -347,15 +347,15 @@ export default function Frame({ children }) {
           </Collapse>
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/Payment"}>
+              <Link to={"/payment"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/Payment" ? "blue" : "black"
+                        location.pathname === "/payment" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/Payment" ? "#dbdbdb" : ""
+                        location.pathname === "/payment" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -363,7 +363,7 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/Payment" ? "blue" : "black"
+                          location.pathname === "/payment" ? "blue" : "black"
                         }`,
                       }}
                     >
