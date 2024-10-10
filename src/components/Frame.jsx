@@ -183,7 +183,7 @@ export default function Frame({ children }) {
                 transformOrigin={{ horizontal: "right", vertical: "top" }}
                 anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
               >
-                <Link to={"/profile"}>
+                <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/profile"}>
                   <MenuItem onClick={handleCloseProfile}>
                     <Avatar /> <>Profile Anda</>
                   </MenuItem>
@@ -232,11 +232,11 @@ export default function Frame({ children }) {
         </DrawerHeader>
         <Divider />
         <List>
-          <Link to={"/home"}>
+          <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/home"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
-                  color: `${location.pathname === "/home" ? "blue" : "black"}`,
+                  color: `${location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/home" ? "blue" : "black"}`,
                   backgroundColor: `${
                     location.pathname === "/" ? "#dbdbdb" : ""
                   }`,
@@ -245,7 +245,7 @@ export default function Frame({ children }) {
                 <ListItemIcon
                   sx={{
 
-                    color: `${location.pathname === "/home" ? "blue" : "black"}`,
+                    color: `${location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/home" ? "blue" : "black"}`,
                   
                   }}
                 >
@@ -256,22 +256,22 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/room"}>
+          <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/room"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/room" ? "blue" : "black"
+                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/room" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/room" ? "#dbdbdb" : ""
+                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/room" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/room" ? "blue" : "black"
+                      location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/room" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -282,22 +282,22 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/ratingRoom"}>
+          <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/ratingRoom" ? "blue" : "black"
+                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/ratingRoom" ? "#dbdbdb" : ""
+                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/ratingRoom" ? "blue" : "black"
+                      location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -318,15 +318,15 @@ export default function Frame({ children }) {
           <Divider />
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/booking"}>
+              <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/booking"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/booking" ? "blue" : "black"
+                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/booking" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/booking" ? "#dbdbdb" : ""
+                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/booking" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -334,7 +334,7 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/booking" ? "blue" : "black"
+                          location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/booking" ? "blue" : "black"
                         }`,
                       }}
                     >
@@ -348,15 +348,15 @@ export default function Frame({ children }) {
           </Collapse>
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/payment"}>
+              <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/payment"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/payment" ? "blue" : "black"
+                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/payment" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/payment" ? "#dbdbdb" : ""
+                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/payment" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -364,7 +364,7 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/payment" ? "blue" : "black"
+                          location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/payment" ? "blue" : "black"
                         }`,
                       }}
                     >
