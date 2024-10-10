@@ -183,7 +183,7 @@ export default function Frame({ children }) {
                 transformOrigin={{ horizontal: "right", vertical: "top" }}
                 anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
               >
-                <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/profile"}>
+                <Link to={"/UTS-MahagaNajwanKaidan-Fe/profile"}>
                   <MenuItem onClick={handleCloseProfile}>
                     <Avatar /> <>Profile Anda</>
                   </MenuItem>
@@ -232,20 +232,20 @@ export default function Frame({ children }) {
         </DrawerHeader>
         <Divider />
         <List>
-          <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/home"}>
+          <Link to={"/UTS-MahagaNajwanKaidan-Fe/home"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
-                  color: `${location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/home" ? "blue" : "black"}`,
+                  color: `${location.pathname === "/UTS-MahagaNajwanKaidan-Fe/home" ? "blue" : "black"}`,
                   backgroundColor: `${
-                    location.pathname === "/" ? "#dbdbdb" : ""
+                    location.pathname === "/UTS-MahagaNajwanKaidan-Fe/home" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
 
-                    color: `${location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/home" ? "blue" : "black"}`,
+                    color: `${location.pathname === "/UTS-MahagaNajwanKaidan-Fe/home" ? "blue" : "black"}`,
                   
                   }}
                 >
@@ -256,22 +256,22 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/room"}>
+          <Link to={"/UTS-MahagaNajwanKaidan-Fe/room"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/room" ? "blue" : "black"
+                    location.pathname === "/UTS-MahagaNajwanKaidan-Fe/room" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/room" ? "#dbdbdb" : ""
+                    location.pathname === "/UTS-MahagaNajwanKaidan-Fe/room" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/room" ? "blue" : "black"
+                      location.pathname === "/UTS-MahagaNajwanKaidan-Fe/room" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -282,22 +282,22 @@ export default function Frame({ children }) {
             </ListItem>
           </Link>
           <Divider />
-          <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom"}>
+          <Link to={"/UTS-MahagaNajwanKaidan-Fe/ratingRoom"}>
             <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   color: `${
-                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" ? "blue" : "black"
+                    location.pathname === "/UTS-MahagaNajwanKaidan-Fe/ratingRoom" ? "blue" : "black"
                   }`,
                   backgroundColor: `${
-                    location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" ? "#dbdbdb" : ""
+                    location.pathname === "/UTS-MahagaNajwanKaidan-Fe/ratingRoom" ? "#dbdbdb" : ""
                   }`,
                 }}
               >
                 <ListItemIcon
                   sx={{
                     color: `${
-                      location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" ? "blue" : "black"
+                      location.pathname === "/UTS-MahagaNajwanKaidan-Fe/ratingRoom" ? "blue" : "black"
                     }`,
                   }}
                 >
@@ -318,15 +318,15 @@ export default function Frame({ children }) {
           <Divider />
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/booking"}>
+              <Link to={"/UTS-MahagaNajwanKaidan-Fe/booking"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/booking" ? "blue" : "black"
+                        location.pathname === "/UTS-MahagaNajwanKaidan-Fe/booking" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/booking" ? "#dbdbdb" : ""
+                        location.pathname === "/UTS-MahagaNajwanKaidan-Fe/booking" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -334,7 +334,7 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/booking" ? "blue" : "black"
+                          location.pathname === "/UTS-MahagaNajwanKaidan-Fe/booking" ? "blue" : "black"
                         }`,
                       }}
                     >
@@ -348,15 +348,15 @@ export default function Frame({ children }) {
           </Collapse>
           <Collapse in={inventory} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <Link to={"/FE_MahagaNajwanKaidan_XIIRPL/payment"}>
+              <Link to={"/UTS-MahagaNajwanKaidan-Fe/payment"}>
                 <ListItem disablePadding>
                   <ListItemButton
                     sx={{
                       color: `${
-                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/payment" ? "blue" : "black"
+                        location.pathname === "/UTS-MahagaNajwanKaidan-Fe/payment" ? "blue" : "black"
                       }`,
                       backgroundColor: `${
-                        location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/payment" ? "#dbdbdb" : ""
+                        location.pathname === "/UTS-MahagaNajwanKaidan-Fe/payment" ? "#dbdbdb" : ""
                       }`,
                       paddingLeft: 4,
                     }}
@@ -364,7 +364,7 @@ export default function Frame({ children }) {
                     <ListItemIcon
                       sx={{
                         color: `${
-                          location.pathname === "/FE_MahagaNajwanKaidan_XIIRPL/payment" ? "blue" : "black"
+                          location.pathname === "/UTS-MahagaNajwanKaidan-Fe/payment" ? "blue" : "black"
                         }`,
                       }}
                     >
