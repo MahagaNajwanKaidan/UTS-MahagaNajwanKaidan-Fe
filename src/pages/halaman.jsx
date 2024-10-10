@@ -15,10 +15,8 @@ const halaman = () => {
       }}
     >
       <Typography variant="h3" gutterBottom>
-        404 - Page Not Found
       </Typography>
       <Typography variant="body1" gutterBottom>
-        Sorry, the page you are looking for does not exist.
       </Typography>
       <Link to="/home" style={{}}>
         <Button>

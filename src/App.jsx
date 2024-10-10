@@ -32,13 +32,13 @@ const App = () => {
         <Frame>
           <Routes>
             {/* Define your routes */}
-            <Route path="/home" element={<Home />} />
-            <Route path="/booking" element={<Booking />} />
-            <Route path="/ratingRoom" element={<RatingRoom />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/room" element={<Room />} />
-            <Route path="/payment" element={<Payment />} />
-            <Route path="*" element={<Halaman />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/home" element={<Home />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/booking" element={<Booking />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" element={<RatingRoom />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/profile" element={<Profile />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/room" element={<Room />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL//payment" element={<Payment />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/" element={<Halaman />} />
           </Routes>
         </Frame>
       </BrowserRouter>
