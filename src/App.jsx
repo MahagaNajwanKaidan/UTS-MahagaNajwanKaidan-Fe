@@ -37,7 +37,7 @@ const App = () => {
             <Route path="/FE_MahagaNajwanKaidan_XIIRPL/ratingRoom" element={<RatingRoom />} />
             <Route path="/FE_MahagaNajwanKaidan_XIIRPL/profile" element={<Profile />} />
             <Route path="/FE_MahagaNajwanKaidan_XIIRPL/room" element={<Room />} />
-            <Route path="/FE_MahagaNajwanKaidan_XIIRPL//payment" element={<Payment />} />
+            <Route path="/FE_MahagaNajwanKaidan_XIIRPL/payment" element={<Payment />} />
             <Route path="/FE_MahagaNajwanKaidan_XIIRPL/" element={<Halaman />} />
           </Routes>
         </Frame>
