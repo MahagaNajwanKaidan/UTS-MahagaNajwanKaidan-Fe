@@ -18,7 +18,7 @@ const halaman = () => {
       </Typography>
       <Typography variant="body1" gutterBottom>
       </Typography>
-      <Link to="/home" style={{}}>
+      <Link to="/FE_MahagaNajwanKaidan_XIIRPL/home" style={{}}>
         <Button>
           Go to Home
         </Button>
