@@ -125,7 +125,7 @@ export default function Frame({ children }) {
           </IconButton>
           <div className="flex flex-row items-center justify-between w-full bg-blue">
             <Typography variant="h6" noWrap component="div">
-              <h1>Hotel NIGHMARES ONE</h1>
+              <h1>Hotel Nightmares One</h1>
             </Typography>
             <React.Fragment>
               <Box

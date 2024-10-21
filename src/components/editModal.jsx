@@ -4,7 +4,7 @@ export const Modals = ({ isBuka, onTutup, judul, children, onSimpan }) => {
     if (!isBuka) return null;
 
     return (
-        <div className="fixed inset-0 bg-blue-600 bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-red-600 bg-opacity-50 flex items-center justify-center">
             <div className="bg-white rounded-lg shadow-lg max-w-lg w-full">
                 <div className="flex justify-between items-center p-4 border-b">
                     <h2 className="text-xl font-bold text-blue-600">{judul}</h2>
