@@ -24,17 +24,18 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import AdfScannerIcon from "@mui/icons-material/AdfScanner";
 import StarsIcon from '@mui/icons-material/Stars';
 // import CategoryIcon from "@mui/icons-material/Category";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, Outlet, useNavigate  } from "react-router-dom";
 import { Avatar, Collapse, Menu, MenuItem, Tooltip } from "@mui/material";
 import {
   ExpandLess,
   ExpandMore,
   Logout,
-  PersonAdd,
   Settings,
 } from "@mui/icons-material";
 
 const drawerWidth = 240;
+
+
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -82,14 +83,30 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-export default function Frame({ children }) {
+export const ProtectedRoute = () => {
+  const navigate = useNavigate();
+  const token = localStorage.getItem('token');
+
+  React.useEffect(() => {
+    if (!token) {
+      navigate('/UTS-MahagaNajwanKaidan-Fe/');
+    }
+  }, [token, navigate]);
+
+  return token ? <Frame /> : null;
+};
+
+
+export default function Frame() { // Hapus {children} karena kita akan menggunakan Outlet
   const theme = useTheme();
+  const navigate = useNavigate(); // Tambahkan ini untuk navigasi
   const [open, setOpen] = React.useState(true);
   const location = useLocation();
   const [inventory, setInventory] = React.useState(false);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const profile = Boolean(anchorEl);
+
   const handleOpenProfile = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -108,6 +125,12 @@ export default function Frame({ children }) {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token'); // Hapus token dari localStorage
+    navigate('/UTS-MahagaNajwanKaidan-Fe/'); // Redirect ke halaman login
+  };
+
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -195,7 +218,7 @@ export default function Frame({ children }) {
                   </ListItemIcon>
                   Seting
                 </MenuItem>
-                <MenuItem onClick={handleCloseProfile}>
+                <MenuItem onClick={handleLogout}>
                   <ListItemIcon>
                     <Logout fontSize="small" />
                   </ListItemIcon>
@@ -380,7 +403,8 @@ export default function Frame({ children }) {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        {children}
+        <Outlet /> {/* Ganti {children} dengan <Outlet /> */}
+        {/* {children} */}
       </Main>
     </Box>
   );

@@ -25,25 +25,50 @@ const theme = createTheme({
   },
 });
 
+// const App = () => {
+//   return (
+//     <ThemeProvider theme={theme}>
+//       <BrowserRouter>
+//         <Frame>
+//           <Routes>
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/" element={<Halaman />} />
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/home" element={<Home />} />
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/booking" element={<Booking />} />
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/ratingRoom" element={<RatingRoom />} />
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/profile" element={<Profile />} />
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/room" element={<Room />} />
+//             <Route path="/UTS-MahagaNajwanKaidan-Fe/payment" element={<Payment />} />
+//           </Routes>
+//         </Frame>
+//       </BrowserRouter>
+//     </ThemeProvider>
+//   );
+// };
+
+
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Frame>
-          <Routes>
-            {/* Define your routes */}
+        <Routes>
+          {/* Rute tanpa Frame */}
+          <Route path="/UTS-MahagaNajwanKaidan-Fe/" element={<Halaman />} />
+          
+          {/* Rute dengan Frame */}
+          <Route element={<Frame />}>
             <Route path="/UTS-MahagaNajwanKaidan-Fe/home" element={<Home />} />
             <Route path="/UTS-MahagaNajwanKaidan-Fe/booking" element={<Booking />} />
             <Route path="/UTS-MahagaNajwanKaidan-Fe/ratingRoom" element={<RatingRoom />} />
             <Route path="/UTS-MahagaNajwanKaidan-Fe/profile" element={<Profile />} />
             <Route path="/UTS-MahagaNajwanKaidan-Fe/room" element={<Room />} />
             <Route path="/UTS-MahagaNajwanKaidan-Fe/payment" element={<Payment />} />
-            <Route path="/UTS-MahagaNajwanKaidan-Fe/" element={<Halaman />} />
-          </Routes>
-        </Frame>
+          </Route>
+        </Routes>
       </BrowserRouter>
     </ThemeProvider>
   );
 };
+
+
 
 export default App;

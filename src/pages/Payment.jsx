@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Modal, Box, Button } from "@mui/material";
 import { deletePayment, getAllPayments, postPayment, updatePayment } from "../services/getApi.js";
-import { Modals } from "../components/editModal"; // Make sure to import Modals
 
 const Payment = () => {
   const [allPayments, setAllPayments] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [post, setPost] = useState({ price: '', paymentMethod: '', paymentDate: '', userId: '', bookingId: '' });
   const [put, setPut] = useState({ id: '', price: '', paymentMethod: '', paymentDate: '', userId: '', bookingId: '' });
-
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -41,7 +39,6 @@ const Payment = () => {
 
     postPayment(post)
       .then((res) => {
-        console.log(res);
         alert('Payment successfully created! Please refresh the page.');
         setAllPayments([...allPayments, res.data]);
       })
@@ -66,7 +63,6 @@ const Payment = () => {
     e.preventDefault();
     updatePayment(put, put.id)
       .then((res) => {
-        console.log(res);
         alert('Payment successfully updated! Please refresh the page.');
         setModalOpen(false);
         setAllPayments((prevPayments) =>
@@ -115,22 +111,17 @@ const Payment = () => {
           </Typography>
           <form onSubmit={submit}>
             <div className="flex flex-col gap-2 my-2">
-            <input
-                onChange={handlePostChange}
-                id="id"
-                value={post.id}
-                type="string"
-                placeholder="id"
-                className="w-full outline outline-2 flex rounded-md outline-blue-600 p-2 text-blue-600"
-              />
-              <input
+            <select
                 onChange={handlePostChange}
                 id="price"
                 value={post.price}
-                type="number"
-                placeholder="Price"
-                className="w-full outline outline-2 flex rounded-md outline-blue-600 p-2 text-blue-600"
-              />
+              className="w-full outline outline-2 flex rounded-md outline-blue-600 p-2 text-blue-600">
+               <option value="">Pilih Harga</option>
+               <option value="100000">100,000</option>
+               <option value="150000">150,000</option>
+               <option value="200000">200,000</option>
+              </select>
+
               <input
                 onChange={handlePostChange}
                 id="paymentMethod"
@@ -221,4 +212,5 @@ const Payment = () => {
 };
 
 export default Payment;
+
 
